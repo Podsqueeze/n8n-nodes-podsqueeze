@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-podsqueeze",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "n8n integration for Podsqueeze API (process, wait, and fetch podcast assets)",
   "keywords": [
     "n8n",
@@ -11,12 +11,9 @@
   ],
   "license": "MIT",
   "author": "Tiago Ferreira <tiago@podsqueeze.com>",
-  "main": "dist/nodes/Podsqueeze/Podsqueeze.node.js",
+  "main": "dist/index.js",
   "files": [
-    "dist",
-    "README.md",
-    "LICENSE",
-    "package.json"
+    "dist/**/*"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,

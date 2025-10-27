@@ -11,6 +11,6 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["nodes/**/*.ts", "credentials/**/*.ts"]
+  "include": ["index.ts", "nodes/**/*.ts", "credentials/**/*.ts"]
 }
 
