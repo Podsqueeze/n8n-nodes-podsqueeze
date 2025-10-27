@@ -1,0 +1,44 @@
+{
+  "name": "n8n-nodes-podsqueeze",
+  "version": "1.0.1",
+  "description": "n8n integration for Podsqueeze API (process, wait, and fetch podcast assets)",
+  "keywords": [
+    "n8n",
+    "n8n-community-node",
+    "podsqueeze",
+    "podcast",
+    "automation"
+  ],
+  "license": "MIT",
+  "author": "Tiago Ferreira <tiago@podsqueeze.com>",
+  "main": "dist/nodes/Podsqueeze/Podsqueeze.node.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/PodsqueezeApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Podsqueeze/Podsqueeze.node.js"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "homepage": "https://podsqueeze.com",
+  "bugs": {
+    "email": "support@podsqueeze.com"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.7.1",
+    "@types/node": "^24.9.1",
+    "n8n-workflow": "^1.0.0",
+    "typescript": "^5.9.3"
+  }
+}

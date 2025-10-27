@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Env / credentials (none exist now, keep ignored for safety)
+.env
+.env.*
+.npmrc
+
+# Coverage / build caches
+coverage/
+.eslintcache
+.tmp/
+
