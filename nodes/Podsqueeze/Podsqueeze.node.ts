@@ -6,8 +6,6 @@ import {
 	NodeOperationError,
 } from 'n8n-workflow';
 
-import { setTimeout as sleep } from 'timers/promises';
-
 export class Podsqueeze implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Podsqueeze',
@@ -153,7 +151,7 @@ export class Podsqueeze implements INodeType {
 			let jobResponse;
 
 			while (jobStatus !== 'completed') {
-				await sleep(pollInterval * 1000);
+				await this.putExecutionToWait(new Date(Date.now() + pollInterval * 1000));
 
 				try {
 					jobResponse = await this.helpers.httpRequest({
