@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-podsqueeze",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "n8n integration for Podsqueeze API (process, wait, and fetch podcast assets)",
   "keywords": [
     "n8n",
