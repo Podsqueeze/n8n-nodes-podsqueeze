@@ -28,9 +28,14 @@
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/podsqueeze/n8n-nodes-podsqueeze.git"
+  },
   "homepage": "https://podsqueeze.com",
   "bugs": {
-    "email": "support@podsqueeze.com"
+    "email": "support@podsqueeze.com",
+    "url": "https://github.com/podsqueeze/n8n-nodes-podsqueeze/issues"
   },
   "devDependencies": {
     "@types/luxon": "^3.7.1",
