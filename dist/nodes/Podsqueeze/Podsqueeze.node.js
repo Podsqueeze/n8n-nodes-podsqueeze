@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Podsqueeze = void 0;
 const n8n_workflow_1 = require("n8n-workflow");
+const promises_1 = require("timers/promises");
 class Podsqueeze {
     constructor() {
         this.description = {
@@ -145,7 +146,7 @@ class Podsqueeze {
             let jobStatus = 'transcribing';
             let jobResponse;
             while (jobStatus !== 'completed') {
-                await new Promise((resolve) => setTimeout(resolve, pollInterval * 1000));
+                await (0, promises_1.setTimeout)(pollInterval * 1000);
                 try {
                     jobResponse = await this.helpers.httpRequest({
                         method: 'POST',
